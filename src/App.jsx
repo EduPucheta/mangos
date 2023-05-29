@@ -1,17 +1,14 @@
-
-import './App.css'
-
+import "./App.css";
+import Inicio from "./pages/Inicio";
 
 function App() {
-
-
   return (
     <>
-    <h1 className="text-3xl font-bold underline bg-black">
-      Hello world!
-    </h1>
+      <div className="@apply bg-[linear-gradient(180deg,#4A3B99_0%,#4A3B99_5%,#694ED6_50%)] min-h-[900px]">
+        <Inicio />
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
