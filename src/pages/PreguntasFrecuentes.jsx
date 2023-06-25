@@ -1,19 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import FaqsBreadcrumb from "../components/FaqsBreadcrumb/FaqsBreadcrumb";
 
 
 export default function PreguntasFrecuentes() {
   return (
     <>
-      <nav aria-label="breadcrumb">
-        <ol className="breadcrumb">
-          <li className="breadcrumb-item active" aria-current="page">
-            Preguntas frecuentes
-          </li>
-        </ol>
-      </nav>
+      <FaqsBreadcrumb route={"preguntas-frecuentes"}/>
       <div className="faqs">
-        
         <Link className="faqs__cards" to = "/preguntas-frecuentes/como-funciona" question1={"¿Como funciona Mangos?"} route={"como-funciona"}>
           ¿Como funciona Mangos?
           <svg

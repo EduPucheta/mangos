@@ -1,10 +1,12 @@
+import "./custom.scss";
 import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import Inicio from "./pages/Inicio";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import PreguntasFrecuentes from "./pages/PreguntasFrecuentes";
-import "./scss.scss";
+
 import ComoFunciona from "./pages/PreguntasFrecuentes/ComoFunciona";
 import Calculo from "./pages/PreguntasFrecuentes/Calculo";
 

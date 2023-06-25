@@ -1,14 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import FaqsBreadcrumb from "../../components/FaqsBreadcrumb";
+import FaqsBreadcrumb from "../../components/FaqsBreadcrumb/FaqsBreadcrumb";
 
 export default function ComoFunciona() {
   return (
     <>
     <FaqsBreadcrumb question={"¿Como funciona Mangos?"} route={"como-funciona"}/>
       <article>
-        <h1 class="faq__title">¿Como funciona Mangos?</h1>
+        <h1 className="faq__title">¿Como funciona Mangos?</h1>
         <p>
           Compará entre dos opciones de financiación y descubrí como te conviene
           pagar tu compra teniendo en cuenta la inflación y la forma de pago que

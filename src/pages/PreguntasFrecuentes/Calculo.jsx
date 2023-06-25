@@ -1,30 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import FaqsBreadcrumb from "../../components/FaqsBreadcrumb/FaqsBreadcrumb";
 
 export default function Calculo() {
   return (
     <>
-      <nav aria-label="breadcrumb" class="breadcrumb__class">
-        <ol class="breadcrumb flex-nowrap">
-          <li class="breadcrumb-item ">
-            
-            <Link
-              class="breadcrumb__class__item__a text-truncate"
-              to="/preguntas-frecuentes"
-            >
-              Preguntas frecuentes
-            </Link>
-          </li>
-          <li
-            class="breadcrumb-item text-truncate active breadcrumb__class__item"
-            aria-current="page"
-          >
-            ¿Cómo calculamos que te conviene?
-          </li>
-        </ol>
-      </nav>
+      <FaqsBreadcrumb
+        question={"¿Cómo calculamos que te conviene?"}
+        route={"como-calculamos-que-conviene"}
+      />
       <article>
-        <h1 class="faq__title">¿Cómo calculamos que te conviene?</h1>
+        <h1 className="faq__title">¿Cómo calculamos que te conviene?</h1>
         <p>
           Para saber que te conviene sumamos el valor de cada cuota con el
           impuesto de financiación, luego lo dividimos por la inflación mensual
@@ -34,7 +19,7 @@ export default function Calculo() {
           Por lo que para cada una de las cuotas hay que sumar el resultado de
           esta ecuación. La mejor opción es la que tenga el menor valor.
         </p>
-        <p class="formula">
+        <p className="formula">
           <script
             type="text/javascript"
             src="https://www.hostmath.com/Math/MathJax.js?config=OK"
@@ -48,7 +33,7 @@ export default function Calculo() {
           la segunda es pagar en 3 cuotas de $20.050 cada una. Para la primera
           opción sería:
         </p>
-        <p class="formula"></p>
+        <p className="formula"></p>
       </article>
     </>
   );
