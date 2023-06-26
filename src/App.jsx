@@ -1,20 +1,17 @@
-import "./custom.scss";
-import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Inicio from "./pages/Inicio";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import PreguntasFrecuentes from "./pages/PreguntasFrecuentes";
-
 import ComoFunciona from "./pages/PreguntasFrecuentes/ComoFunciona";
 import Calculo from "./pages/PreguntasFrecuentes/Calculo";
-
-
 import { Route, Routes, Link, BrowserRouter } from "react-router-dom";
 import Footer from "./components/Footer";
 import Resultado from "./pages/Resultado";
 import logo from "./assets/mangos-logo.png";
+import ImpuestoAlSello from "./pages/PreguntasFrecuentes/ImpuestoAlSello";
+import "./custom.scss";
 
 function App() {
   return (
@@ -52,6 +49,10 @@ function App() {
             <Route
               path="/preguntas-frecuentes/como-calculamos-que-conviene"
               element={<Calculo />}
+            ></Route>
+            <Route
+              path="/preguntas-frecuentes/que-es-el-impuesto-al-sello"
+              element={<ImpuestoAlSello />}
             ></Route>
             <Route path="/resultado" element={<Resultado />}></Route>
           </Routes>

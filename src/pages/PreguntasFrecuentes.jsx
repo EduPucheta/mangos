@@ -46,7 +46,7 @@ export default function PreguntasFrecuentes() {
             ></path>
           </svg>
         </Link>
-        <a className="faqs__cards">
+        <Link className="faqs__cards" to="/preguntas-frecuentes/que-es-el-impuesto-al-sello"> 
           ¿Qué es el impuesto al sello?
           <svg
             aria-hidden="true"
@@ -64,8 +64,8 @@ export default function PreguntasFrecuentes() {
               d="M342.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L274.7 256 105.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
             ></path>
           </svg>
-        </a>
-        <a className="faqs__cards">
+        </Link>
+        <Link className="faqs__cards">
           ¿Tienen algún medio de contacto?
           <svg
             aria-hidden="true"
@@ -83,8 +83,8 @@ export default function PreguntasFrecuentes() {
               d="M342.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L274.7 256 105.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
             ></path>
           </svg>
-        </a>
-        <a className="faqs__cards">
+        </Link>
+        <Link className="faqs__cards">
           ¿Tienen una app para celulares?
           <svg
             aria-hidden="true"
@@ -102,7 +102,8 @@ export default function PreguntasFrecuentes() {
               d="M342.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L274.7 256 105.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
             ></path>
           </svg>
-        </a>
+        </Link>
+        
       </div>
     </>
   );

@@ -543,12 +543,13 @@ export default function Inicio() {
             />
           </label>
           <label htmlFor="valordelacuota">
-            Valor de cada cuota
+            Valor de cada cuota &nbsp;
             <div
               className="tooltip__class"
               data-tooltip="En caso de elegir contado ingresar el valor total de la compra"
             >
               <svg
+                className="inline"
                 width="18px"
                 height="18px"
                 viewBox="0 0 24 24"
@@ -631,12 +632,13 @@ export default function Inicio() {
           </label>
 
           <label htmlFor="valordelacuota2">
-            Valor de cada cuota
+            Valor de cada cuota &nbsp;
             <div
               className="tooltip__class"
               data-tooltip="En caso de elegir contado ingresar el valor total de la compra"
             >
               <svg
+                className="inline"
                 width="18px"
                 height="18px"
                 viewBox="0 0 24 24"
@@ -678,12 +680,13 @@ export default function Inicio() {
             </div>
             <div id="advanced__options">
               <label htmlFor="inflacion">
-                Inflación anual
+                Inflación anual&nbsp;
                 <div
                   className="tooltip__class tooltip1"
                   data-tooltip="Por defecto tomamos el índice del último mes de INDEC (Septiembre 2022: 6.2%) y la proyectamos a 12 meses."
                 >
                   <svg
+                  className="inline"
                     width="18px"
                     height="18px"
                     viewBox="0 0 24 24"
@@ -709,13 +712,14 @@ export default function Inicio() {
                 />
               </label>
               <label htmlFor="impuestoAlSello">
-                Impuesto al pago con tarjeta
+                Impuesto al pago con tarjeta&nbsp;
                 <div
                   className="tooltip__class tooltip2"
                   data-tooltip="El porcentaje del impuesto depende de cada provincia: 
                                 Buenos Aires: 1.2%, Córdoba: 1.5%"
                 >
                   <svg
+                  className="inline"
                     width="18px"
                     height="18px"
                     viewBox="0 0 24 24"

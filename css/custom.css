@@ -13,9 +13,9 @@
   width: 100%;
   height: 44px;
   /* Grey/Grey-100 */
-  background: #F2F2F2;
+  background: #f2f2f2;
   /* Grey/Grey-200 */
-  border: 2px solid #E6E6E6;
+  border: 2px solid #e6e6e6;
   border-radius: 10px;
   /* Inside auto layout */
   flex: none;
@@ -35,9 +35,9 @@
   flex-grow: 1;
 }
 .input:invalid {
-  border: 2px solid #CC3535;
+  border: 2px solid #cc3535;
   /* Alert-Shadow */
-  box-shadow: 0px 0px 0px 3px #FAEBEB;
+  box-shadow: 0px 0px 0px 3px #faebeb;
   border-radius: 10px;
   /* Inside auto layout */
   flex: none;
@@ -95,10 +95,10 @@ html {
 }
 html body {
   font-family: "Inter", sans-serif;
-  background-color: #694ED6;
+  background-color: #694ed6;
 }
 html body .background {
-  background-image: linear-gradient(180deg, #4A3B99 0%, #4A3B99 5%, #694ED6 50%);
+  background-image: linear-gradient(180deg, #4a3b99 0%, #4a3b99 5%, #694ed6 50%);
   min-height: 900px;
 }
 @media screen and (min-width: 1025px) {
@@ -133,7 +133,7 @@ html body .nav__logo .logo {
   }
 }
 html body #myBtn {
-  border: 1px solid #694ED6;
+  border: 1px solid #694ed6;
   border-radius: 8px;
   color: white;
   font-style: normal;
@@ -148,7 +148,7 @@ html body #myBtn {
   cursor: pointer;
 }
 html body #myBtn:hover {
-  background-color: #694ED6;
+  background-color: #694ed6;
   color: white;
 }
 @media (max-width: 1025px) {
@@ -210,7 +210,7 @@ html .cuotas__app__option1__title {
   text-decoration-color: rgb(0, 156, 189);
 }
 html .cuotas__app__option2__title {
-  text-decoration-color: #F04E98;
+  text-decoration-color: #f04e98;
 }
 html .modal-content {
   width: 90%;
@@ -271,7 +271,6 @@ html .cuotas__app form .input {
   background: #f2f2f2;
   /* Grey/Grey-200 */
   border: 2px solid #e6e6e6;
-  border-radius: 24px;
   /* Inside auto layout */
   flex: none;
   order: 1;
@@ -290,7 +289,7 @@ html .cuotas__app form .input:active {
   flex-grow: 1;
 }
 html .cuotas__app form .input:invalid {
-  border: 3px solid #D60040;
+  border: 3px solid #d60040;
   box-shadow: 0px 0px 0px 3px #faebeb;
   /* Inside auto layout */
   flex: none;
@@ -304,13 +303,11 @@ html .cuotas__app form #chip__cuotas1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding-left: 16px;
-  padding-right: 16px;
 }
 html .cuotas__app form #chip__cuotas1 input {
   border: 1px solid rgba(0, 0, 0, 0.12);
   border-radius: 24px;
-  background: #FFFFFF;
+  background: #ffffff;
   text-align: center;
   margin-left: 5px;
   margin-right: 5px;
@@ -353,13 +350,11 @@ html .cuotas__app form #chip__cuotas2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding-left: 16px;
-  padding-right: 16px;
 }
 html .cuotas__app form #chip__cuotas2 input {
   border: 1px solid rgba(0, 0, 0, 0.12);
   border-radius: 24px;
-  background: #FFFFFF;
+  background: #ffffff;
   text-align: center;
   margin-left: 5px;
   margin-right: 5px;
@@ -374,7 +369,7 @@ html .cuotas__app form #chip__cuotas2 input {
   cursor: pointer;
 }
 html .cuotas__app form #chip__cuotas2 input:hover {
-  border: 1px solid #F04E98;
+  border: 1px solid #f04e98;
 }
 html .cuotas__app form #chip__cuotas2 .selected2 {
   background-color: rgba(240, 78, 152, 0.16);
@@ -390,7 +385,7 @@ html .cuotas__app form #cantidaddecuotas:focus-visible {
 html .cuotas__app form #cantidaddecuotas2 {
   display: none;
   transition-duration: 0.3s;
-  outline-color: #F04E98;
+  outline-color: #f04e98;
 }
 html .cuotas__app form .label {
   background: rgba(105, 78, 214, 0.08);
@@ -412,7 +407,7 @@ html .cuotas__app form #valordelacuota:focus-visible {
   outline-color: rgb(0, 156, 189);
 }
 html .cuotas__app form #valordelacuota2:focus-visible {
-  outline-color: #F04E98;
+  outline-color: #f04e98;
 }
 html .cuotas__app form .advaced_options__withoptions {
   margin-bottom: 24px;
@@ -460,7 +455,7 @@ html .cuotas__app form #submitbutton {
   left: 16px;
   top: 16px;
   /* Primary */
-  background: #4A3B99;
+  background: #4a3b99;
   /* Primary */
   border-radius: 8px;
   color: white;
@@ -468,11 +463,11 @@ html .cuotas__app form #submitbutton {
   transition: 0.3s;
 }
 html .cuotas__app form #submitbutton:hover {
-  background-color: #694ED6;
+  background-color: #694ed6;
   color: white;
 }
 html .cuotas__app form .error__message {
-  color: #D60040;
+  color: #d60040;
   font-size: small;
 }
 
@@ -493,10 +488,11 @@ html .cuotas__app form .error__message {
   color: rgb(0, 156, 189);
 }
 #resultados #mensajederesultado3 .secondoption {
-  color: #F04E98;
+  color: #f04e98;
 }
 
-#resultados > *, .ResultCard {
+#resultados > *,
+.ResultCard {
   font-weight: 500;
   font-size: small;
   margin-top: 8px;
@@ -509,7 +505,8 @@ html .cuotas__app form .error__message {
   box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.11), 0px 3px 14px rgba(0, 0, 0, 0.09), 0px 5px 5px rgba(0, 0, 0, 0.16);
 }
 @media (min-width: 1025px) {
-  #resultados > *, .ResultCard {
+  #resultados > *,
+  .ResultCard {
     /* big landscape tablets, laptops, and desktops */
     max-width: 1000px;
     margin-top: 24px;
@@ -520,10 +517,12 @@ html .cuotas__app form .error__message {
     border-radius: 7px;
     box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.11), 0px 3px 14px rgba(0, 0, 0, 0.09), 0px 5px 5px rgba(0, 0, 0, 0.16);
   }
-  #resultados > * #mensajederesultado4, .ResultCard #mensajederesultado4 {
+  #resultados > * #mensajederesultado4,
+  .ResultCard #mensajederesultado4 {
     color: red;
   }
-  #resultados > * #resultado__detalle, .ResultCard #resultado__detalle {
+  #resultados > * #resultado__detalle,
+  .ResultCard #resultado__detalle {
     font-size: small;
   }
 }
@@ -548,7 +547,7 @@ html .cuotas__app form .error__message {
   padding: 0px;
 }
 .results__page #table tr th:nth-of-type(3) {
-  color: #F04E98;
+  color: #f04e98;
   text-align: end;
   padding: 0px;
 }
@@ -574,7 +573,7 @@ html .cuotas__app form .error__message {
   box-sizing: border-box;
   padding: 12px 24px;
   height: 44px;
-  background: #4A3B99;
+  background: #4a3b99;
   border: none;
   border-radius: 8px;
   color: white;
@@ -583,7 +582,7 @@ html .cuotas__app form .error__message {
   transition: 0.3s;
 }
 .startover:hover {
-  background-color: #694ED6;
+  background-color: #694ed6;
   color: white;
 }
 .startover a {
@@ -663,7 +662,7 @@ html .cuotas__app form .error__message {
   box-sizing: border-box;
   padding: 12px 24px;
   height: 44px;
-  background: #4A3B99;
+  background: #4a3b99;
   border: none;
   border-radius: 8px;
   color: white;
@@ -711,13 +710,13 @@ html .cuotas__app form .error__message {
   color: rgb(0, 156, 189);
 }
 .Investments .Investments__Options .Investments__Option2 {
-  color: #F04E98;
+  color: #f04e98;
 }
 .Investments .Investments__Options .Investments__Option1 {
   color: rgb(0, 156, 189);
 }
 .Investments .Investments__Options .Investments__Option2 {
-  color: #F04E98;
+  color: #f04e98;
 }
 
 .not-found {
@@ -788,13 +787,13 @@ html .cuotas__app form .error__message {
 
 .btn-request {
   padding: 10px 25px;
-  border: 1px solid #FFCB39;
+  border: 1px solid #ffcb39;
   border-radius: 100px;
   font-weight: 400;
 }
 
 .btn-request:hover {
-  background-color: #FFCB39;
+  background-color: #ffcb39;
   color: #fff;
   transform: scale(1.05);
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
@@ -806,7 +805,7 @@ html .cuotas__app form .error__message {
   margin: 15px auto;
   width: 100px;
   padding: 10px 15px;
-  border: 1px solid #FFCB39;
+  border: 1px solid #ffcb39;
   border-radius: 100px;
   font-weight: 400;
   display: block;
@@ -819,7 +818,7 @@ html .cuotas__app form .error__message {
 }
 
 .btn-go-home:hover {
-  background-color: #FFCB39;
+  background-color: #ffcb39;
   color: #fff;
   transform: scale(1.05);
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
@@ -952,7 +951,7 @@ html .cuotas__app form .error__message {
   margin-right: 5%;
 }
 .faqs .faqs__cards {
-  background-color: #F1F1FA;
+  background-color: #f1f1fa;
   border-radius: 8px;
   min-height: 50px;
   margin-top: 16px;
@@ -967,7 +966,6 @@ html .cuotas__app form .error__message {
 
 .breadcrumb__class {
   font-size: small;
-  max-width: 300px;
   margin-left: 5%;
   margin-right: 5%;
   color: white;
@@ -989,7 +987,7 @@ article {
   padding: 24px;
   box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.11), 0px 3px 14px rgba(0, 0, 0, 0.09), 0px 5px 5px rgba(0, 0, 0, 0.16);
   font-size: small;
-  background-color: #F1F1FA;
+  background-color: #f1f1fa;
 }
 article .faq__title {
   color: rgb(0, 0, 0);
@@ -1004,7 +1002,7 @@ article .faq__title {
   font-size: medium;
   text-decoration: none;
   margin-top: 24px;
-  background-color: #4A3B99;
+  background-color: #4a3b99;
   color: white;
   box-sizing: border-box;
   /* Auto layout */
@@ -1021,7 +1019,7 @@ article .faq__title {
   transition: 0.3s;
 }
 .modal-content__start__button:hover {
-  background-color: #694ED6;
+  background-color: #694ed6;
   color: white;
 }
 
