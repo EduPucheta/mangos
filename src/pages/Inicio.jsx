@@ -747,12 +747,12 @@ export default function Inicio() {
             </div>
           </div>
           <Link
-            to={`/resultado?`}
+            to={`/resultado?cuotasOp1=${1}&valOp1=${2}&cuotasOp2=${3}&valOp2=${4}&inf=${5}&impsell=${6}`}
             type="button"
             form="form1"
             id="submitbutton"
             value="Submit"
-            onClick={() => checkInputs()}
+            onClick={() => checkInputs()} 
           >
             Comparar 📊
           </Link>
