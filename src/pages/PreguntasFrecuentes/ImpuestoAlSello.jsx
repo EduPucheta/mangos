@@ -18,7 +18,7 @@ export default function ImpuestoAlSello({title="¿Qué es el impuesto al sello?"
 
 3. Costos indirectos: En algunas ocasiones, los comercios pueden aumentar los precios de los productos o servicios para compensar los impuestos y cargos adicionales, como el impuesto al sello o las comisiones por el uso de tarjetas. Estos costos indirectos pueden influir en el precio final de la compra.
 
-Es importante destacar que los efectos específicos del impuesto al sello en las compras con tarjetas de crédito pueden variar según la provincia y las regulaciones específicas de cada jurisdicción. Además, es fundamental tener en cuenta otros factores, como las tasas de interés, las promociones y las condiciones de financiación ofrecidas por las entidades emisoras de las tarjetas de crédito, ya que estos aspectos también pueden influir en el costo total de la compra.
+Es importante destacar que los efectos específicos del impuesto al sello en las compras con tarjetas de crédito pueden variar según la provincia y las regulaciones específicas de cada jurisdicción. Además, es fundamental tener en cuenta otros factores, como las tasas de interés, las promociones y las condiciones de financiación ofrecidas por las entidades emisoras de las tarjetas de crédito, ya que estos aspectos también pueden influir en el costo total de la compra. 
             </p>
       </article>
     </>
