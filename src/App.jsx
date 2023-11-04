@@ -8,7 +8,6 @@ import "./scss.scss";
 import ComoFunciona from "./pages/PreguntasFrecuentes/ComoFunciona";
 import Calculo from "./pages/PreguntasFrecuentes/Calculo";
 
-
 import { Route, Routes, Link, BrowserRouter } from "react-router-dom";
 import Footer from "./components/Footer";
 import Resultado from "./pages/Resultado";
@@ -25,13 +24,17 @@ function App() {
               <Navbar.Brand eventKey={3} as={Link} to="/">
                 <img className="h-8" src={logo} />
               </Navbar.Brand>
-              <Navbar.Toggle  aria-controls="responsive-navbar-nav" />
-              <Navbar.Collapse  id="responsive-navbar-nav">
+              <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+              <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="me-auto">
-                  <Nav.Link eventKey={1}  as={Link} to="/preguntas-frecuentes/como-funciona">
+                  <Nav.Link
+                    eventKey={1}
+                    as={Link}
+                    to="/preguntas-frecuentes/como-funciona"
+                  >
                     Como Funciona
                   </Nav.Link>
-                  <Nav.Link eventKey={2}  as={Link} to="/preguntas-frecuentes">
+                  <Nav.Link eventKey={2} as={Link} to="/preguntas-frecuentes">
                     Preguntas Frecuentes
                   </Nav.Link>
                 </Nav>
@@ -52,7 +55,7 @@ function App() {
               path="/preguntas-frecuentes/como-calculamos-que-conviene"
               element={<Calculo />}
             ></Route>
-                        <Route
+            <Route
               path="/preguntas-frecuentes/impuesto-al-sello"
               element={<ImpuestoAlSello />}
             ></Route>

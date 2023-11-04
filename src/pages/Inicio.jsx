@@ -748,7 +748,7 @@ export default function Inicio() {
             </div>
           </div>
           <Link
-            to={`/resultado?`}
+            to={`/resultado`}
             type="button"
             form="form1"
             id="submitbutton"
