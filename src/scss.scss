@@ -374,8 +374,7 @@ html {
           display: flex;
           flex-wrap: wrap;
           justify-content: space-around;
-          padding-left: $uxg-spacing-3;
-          padding-right: $uxg-spacing-3;
+
           input {
             border: 1px solid rgba(0, 0, 0, 0.12);
             border-radius: $radius-chips;
@@ -425,8 +424,7 @@ html {
           display: flex;
           flex-wrap: wrap;
           justify-content: space-around;
-          padding-left: $uxg-spacing-3;
-          padding-right: $uxg-spacing-3;
+  
           input {
             border: 1px solid rgba(0, 0, 0, 0.12);
             border-radius: $radius-chips;

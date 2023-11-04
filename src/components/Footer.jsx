@@ -4,8 +4,8 @@ export default function Footer() {
   return (
     <>
     <footer className="footer">
-    <a href="politica-de-privacidad.html">Políticas de Privacidad</a>
-    <p className="reserved_rights">© 2023 Mangos.</p>
+    <a href="politica-de-privacidad.html" className='no-underline'>Políticas de Privacidad</a>
+    <p className="reserved_rights ">© 2023 Mangos.</p>
   </footer>
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"

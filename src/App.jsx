@@ -13,6 +13,7 @@ import { Route, Routes, Link, BrowserRouter } from "react-router-dom";
 import Footer from "./components/Footer";
 import Resultado from "./pages/Resultado";
 import logo from "./assets/mangos-logo.png";
+import ImpuestoAlSello from "./pages/PreguntasFrecuentes/ImpuestoAlSello";
 
 function App() {
   return (
@@ -21,16 +22,16 @@ function App() {
         <div className="@apply bg-[linear-gradient(180deg,#4A3B99_0%,#4A3B99_5%,#694ED6_50%)] min-h-[900px]">
           <Navbar collapseOnSelect expand="lg" variant="dark">
             <Container>
-              <Navbar.Brand as={Link} to="/">
+              <Navbar.Brand eventKey={3} as={Link} to="/">
                 <img className="h-8" src={logo} />
               </Navbar.Brand>
-              <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-              <Navbar.Collapse id="responsive-navbar-nav">
+              <Navbar.Toggle  aria-controls="responsive-navbar-nav" />
+              <Navbar.Collapse  id="responsive-navbar-nav">
                 <Nav className="me-auto">
-                  <Nav.Link as={Link} to="/preguntas-frecuentes/como-funciona">
+                  <Nav.Link eventKey={1}  as={Link} to="/preguntas-frecuentes/como-funciona">
                     Como Funciona
                   </Nav.Link>
-                  <Nav.Link as={Link} to="/preguntas-frecuentes">
+                  <Nav.Link eventKey={2}  as={Link} to="/preguntas-frecuentes">
                     Preguntas Frecuentes
                   </Nav.Link>
                 </Nav>
@@ -50,6 +51,10 @@ function App() {
             <Route
               path="/preguntas-frecuentes/como-calculamos-que-conviene"
               element={<Calculo />}
+            ></Route>
+                        <Route
+              path="/preguntas-frecuentes/impuesto-al-sello"
+              element={<ImpuestoAlSello />}
             ></Route>
             <Route path="/resultado" element={<Resultado />}></Route>
           </Routes>
