@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function FaqsBreadcrumb({ question, route }) {
   return (
-    <Breadcrumb class="breadcrumb__class !no-underline" >
+    <Breadcrumb className="breadcrumb__class !no-underline" >
       <Breadcrumb.Item className="!no-underline text-white " >
         <Link to="/preguntas-frecuentes" className="!no-underline text-white ">Preguntas Frecuentes</Link>
       </Breadcrumb.Item>
