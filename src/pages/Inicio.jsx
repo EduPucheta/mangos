@@ -324,11 +324,7 @@ export default function Inicio(cantidaddecuotas) {
 
     PV();
 
-    // send query params
 
-    setParams({ t: "12" });
-
-    //
   }
 
   // VALOR ACTUAL DE LAS CUOTAS
@@ -381,7 +377,7 @@ export default function Inicio(cantidaddecuotas) {
 
     // send query params
 
-    setParams({ p: "50" });
+  
 
     //
   }

@@ -3,6 +3,7 @@ import { First } from "react-bootstrap/esm/PageItem";
 import { useSearchParams } from "react-router-dom";
 
 import { useEffect, useState } from "react";
+import Resultado1 from "../components/Resultado1";
 
 // remove 000 host banner
 var $target = $('[alt*="000webhost"]');
@@ -248,9 +249,7 @@ export default function Resultado() {
   return (
     <>
       <div className="results__page">
-        <div id="resultados">
-          <div id="mensajederesultado3" className="text-center">{result}</div>
-        </div>
+        <Resultado1 result={result}/>
         <span>
           <div id="table">
             <table></table>
@@ -264,7 +263,7 @@ export default function Resultado() {
         ></script>
         <div className="Investments ResultCard">
           <h2 className="Investments__MainTitle">
-            Inversiones para que tus manguitos rindan aún más
+            Opciones de Inversión para que tu plata rindan más
           </h2>
           <ul
             className="nav nav-tabs Investments__Options"
