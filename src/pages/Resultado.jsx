@@ -216,7 +216,7 @@ function myFunction2(e) {
   // CONDICIONALES
   if (valoractualresult2op2 > valoractualresult2) {
     MainResult =
-      "Te conviene la <span class = 'firstoption'>primera opción</span> de financiación: pagar tu compra en " +
+      "Te conviene la primera opciónde financiación: pagar tu compra en " +
       cantidaddecuotas +
       " cuotas de " +
       formatter.format(valordelacuota4) +
@@ -224,7 +224,7 @@ function myFunction2(e) {
   }
   if (valoractualresult2op2 < valoractualresult2) {
     MainResult =
-      "Te conviene la <span class = 'secondoption'>segunda opción</span> de financiación: pagar tu compra en " +
+      "Te conviene la segunda opción de financiación: pagar tu compra en " +
       cantidaddecuotas +
       " cuotas de " +
       formatter.format(valordelacuota4) +
@@ -249,7 +249,7 @@ export default function Resultado() {
     <>
       <div className="results__page">
         <div id="resultados">
-          <div id="mensajederesultado3">{result}</div>
+          <div id="mensajederesultado3" className="text-center">{result}</div>
         </div>
         <span>
           <div id="table">
