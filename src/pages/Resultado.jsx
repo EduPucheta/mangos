@@ -1,7 +1,18 @@
 import React from "react";
+import { First } from "react-bootstrap/esm/PageItem";
 import { useSearchParams } from "react-router-dom";
 
-export default function Resultado() {
+import { useEffect, useState } from "react";
+
+export default function Resultado(MainResult) {
+  
+
+  const [param] = useSearchParams();
+
+  const p = param.get("cuotasOp1");
+  const q = param.get("valOp1");
+
+
   // remove 000 host banner
   var $target = $('[alt*="000webhost"]');
   if ($target.length > 0) {
@@ -173,7 +184,10 @@ export default function Resultado() {
     let rate = (Math.pow(1 + anualInflation / 100, 1 / 12) - 1) * 100;
     let rate2 = parseFloat(rate) / 100.0;
     //const valoractual = valordelacuota4 / rate * (1 - Math.pow(1 + rate2, cantidaddecuotas));
+    let valoractualresult = 0;
     let valoractualresult2 = 0;
+    let valoractualresultop2 = 0;
+
     const valoractualDeCadaCuota = [];
     const numeroDeCadaCuota = [];
     // Acá se calcula el valor actual de la suma de las cuotas//
@@ -182,7 +196,7 @@ export default function Resultado() {
         valoractualresult =
           (valordelacuota4 * (1 + parseFloat(impuestoAlSello))) /
           Math.pow(1 + rate2, i + 1);
-        console.log(1 + rate2);
+
         valoractualresult2 += valoractualresult;
         valoractualDeCadaCuota.push(valoractualresult);
         numeroDeCadaCuota.push("Cuota Nº " + (i + 1));
@@ -224,9 +238,12 @@ export default function Resultado() {
 
     let firstResultMessage = document.createElement("span");
 
+    let MainResult = "";
+    
+
     // CONDICIONALES
     if (valoractualresult2op2 > valoractualresult2) {
-      firstResultMessage.innerHTML =
+      MainResult =
         "Te conviene la <span class = 'firstoption'>primera opción</span> de financiación: pagar tu compra en " +
         cantidaddecuotas +
         " cuotas de " +
@@ -234,7 +251,7 @@ export default function Resultado() {
         " cada una.";
     }
     if (valoractualresult2op2 < valoractualresult2) {
-      firstResultMessage.innerHTML =
+      MainResult =
         "Te conviene la <span class = 'secondoption'>segunda opción</span> de financiación: pagar tu compra en " +
         cantidaddecuotas +
         " cuotas de " +
@@ -242,9 +259,10 @@ export default function Resultado() {
         " cada una.";
     }
     if (valoractualresult2op2 == valoractualresult2) {
-      firstResultMessage.innerHTML =
-        "Ambas opciones de financiación son indiferetes.";
+      MainResult = "Ambas opciones de financiación son indiferetes.";
     }
+
+    console.log(MainResult);
 
     // IMPUESTO AL SELLO
     let impuestoAlSelloOp1 =
@@ -312,24 +330,24 @@ export default function Resultado() {
 
       table.appendChild(row);
     });
-
-    if (valoractualresult2op2 > valoractualresult2) {
-      document.querySelector(
-        "#table > table > tr:nth-child(6) > td:nth-child(2)"
-      ).style.color = "#008744";
-    }
-    if (valoractualresult2op2 < valoractualresult2) {
-      document.querySelector(
-        "#table > table > tr:nth-child(6) > td:nth-child(3)"
-      ).style.color = "#008744";
-    }
+    return MainResult;
   }
 
+  myFunction2();
+
+
+  
+  
+ 
   return (
     <>
       <div className="results__page">
         <div id="resultados">
-          <div id="mensajederesultado3"></div>
+          <div id="mensajederesultado3">
+
+          
+
+          </div>
         </div>
         <span>
           <div id="table">

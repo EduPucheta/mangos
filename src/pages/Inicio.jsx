@@ -1,8 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { useSearchParams } from "react-router-dom";
 
-export default function Inicio() {
+export default function Inicio(cantidaddecuotas) {
+  const [params, setParams] = useSearchParams();
+
   // remove 000 host banner
   var $target = $('[alt*="000webhost"]');
   if ($target.length > 0) {
@@ -117,6 +120,12 @@ export default function Inicio() {
   // FORM VALIDATION
 
   function checkInputs() {
+        // send query params
+
+        setParams({ q: "111" });
+
+        //
+
     const valordelacuotaComp = document.querySelector("#valordelacuota");
     const valordelacuotaComp2 = document.querySelector("#valordelacuota2");
     const inflacion = document.querySelector("#inflacion__number");
@@ -125,7 +134,11 @@ export default function Inicio() {
     const chips2__error = document.querySelector("#chip__cuotas2");
     const valordelacuotaCompInput = valordelacuotaComp.value.trim();
     const valordelacuotaCompInput2 = valordelacuotaComp2.value.trim();
+    // send query params
 
+    setParams({ cuotasOp1: "66" , valOp1: "5000", cuotasOp2: "2", valOp2: "50", inf: "3", impsell: "4"});
+
+    //
     if (valordelacuotaCompInput == "$0" || valordelacuotaCompInput == "") {
       setErrorFor(
         valordelacuotaComp,
@@ -232,6 +245,7 @@ export default function Inicio() {
     if (document.querySelectorAll(".error__message").length == 0) {
       myFunction();
     }
+
   }
 
   function setErrorFor(input, message) {
@@ -309,12 +323,15 @@ export default function Inicio() {
     const valordelacuota4Op2 = valordelacuota2Op2.replace(",", "");
 
     PV();
+
+    // send query params
+
+    setParams({ t: "12" });
+
+    //
   }
 
   // VALOR ACTUAL DE LAS CUOTAS
-  
-
-
 
   function PV() {
     anualInflation = document.querySelector("#inflacion__number").value;
@@ -325,7 +342,7 @@ export default function Inicio() {
     // OPCION 1
     //Aquí se elije el valor de la cantidad de cuotas seleccionadas. si tiene el atributo data elige los botones si no el valor custom
     if (document.querySelector(".selected").hasAttribute("data-test")) {
-      cantidaddecuotas = parseFloat( 
+      cantidaddecuotas = parseFloat(
         document.querySelector(".selected").getAttribute("data-test")
       );
     } else {
@@ -350,8 +367,6 @@ export default function Inicio() {
     const valordelacuota2Op2 = valordelacuotaOp2.replace("$", "");
     const valordelacuota4Op2 = valordelacuota2Op2.replace(",", "");
 
-    // Acá se calcula el valor actual de la suma de las cuotas//
-
     // QUERY STRING
     const query = new URLSearchParams({
       cuotasOp1: cantidaddecuotas,
@@ -363,6 +378,12 @@ export default function Inicio() {
     });
 
     queryString = query.toString();
+
+    // send query params
+
+    setParams({ p: "50" });
+
+    //
   }
 
   //  Format as percent
@@ -748,13 +769,13 @@ export default function Inicio() {
             </div>
           </div>
           <Link
-            to={`/resultado`}
+            to={`/resultado?${params.toString()}`}
             type="button"
             form="form1"
             id="submitbutton"
             value="Submit"
             className="no-underline"
-            onClick={() => checkInputs()}
+            onClick={() => [checkInputs()]}
           >
             Comparar 📊
           </Link>
